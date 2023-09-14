@@ -5,6 +5,8 @@
 // the compiled file.
 //
 //= require jquery
+//= require rails-ujs
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require bootstrap-datepicker
 //= require_tree .

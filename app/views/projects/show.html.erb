@@ -1,6 +1,6 @@
-<%- model_class = Project -%>
+<% model_class = Project %>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+  <h1><%= @project.title %></h1>
 </div>
 
 <dl class="dl-horizontal">
@@ -12,8 +12,7 @@
   <dd><%= @project.expected_completion_date %></dd>
 </dl>
 
-<%= link_to t('.back', :default => t("helpers.links.back")),
-              projects_path, :class => 'btn btn-default'  %>
+<%= link_to t('Back to Home'), root_path, :class => 'btn btn-default'  %>
 <%= link_to t('.edit', :default => t("helpers.links.edit")),
               edit_project_path(@project), :class => 'btn btn-default' %>
 <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
