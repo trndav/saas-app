@@ -66,7 +66,7 @@
   }
   
   .jumbotron {
-    background-image: asset-url('app/assets/images/mehoheting.png');
+    background-image: url('assets/meeting.png');
     background-size: cover;
     color: #fff;
     font-family: 'Helvetica Neue' !important;
